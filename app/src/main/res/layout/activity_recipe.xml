@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/teal_700"
+    tools:context=".Recipe.RecipeActivity">
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/strMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strMeal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+
+
+    <ImageView
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/strMealThumb"
+        android:padding="7dp"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/strMealThumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/strCategory"
+            android:text="@string/strCategory"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/strArea"
+            android:text="@string/strArea"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/strTags"
+            android:layout_width="wrap_content"
+            android:text="@string/strTags"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/strYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/youtube"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:shadowColor="@color/black"
+        android:gravity="center"
+        android:text="@string/strInstructions"
+        android:padding="5dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".50">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/strInstructions"
+        android:gravity="center"
+        android:text="@string/strInstructions"
+        android:padding="5dp"
+        />
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ingredients"
+        android:background="@drawable/border"
+        android:shadowColor="@color/black"
+        android:gravity="center"
+        android:text="@string/Ingredients"
+        android:padding="5dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".50">
+    <LinearLayout
+        android:id="@+id/scrollable"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/strIngredient1"
+            android:text="@string/strIngredient"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/strMeasure1"
+            android:text="@string/strMeasure"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cooking Recipe</string>
+    <string name="get_started">Get Started</string>
+    <string name="cooking_quotes">RECIPE APP \n\n Developers:\n\t\t\t\t\t\tLebasora, John Jefferson F\n\t\t\t\t\t\tLoreno,Luigi\n\t\t\t\t\t\tShiela Mae Narido\n\nInstructor:\n\t\t\t\t\t\tCabral, Sarah Jane</string>
+    <string name="alt_img_description">background_photo</string>
+    <string name="category">CATEGORIES</string>
+    <string name="meal">MEALS</string>
+    <string name="data">data</string>
+    <string name="recipe">SEE RECIPE</string>
+    <string name="see_more">SEE MORE</string>
+    <string name="strMeal">TITLE</string>
+    <string name="strMealThumb">Meal Photo</string>
+    <string name="strCategory">CATEGORY</string>
+    <string name="strArea">AREA</string>
+    <string name="strInstructions">INSTRUCTIONS</string>
+    <string name="strYoutube">YOUTUBE</string>
+    <string name="Ingredients">INGREDIENTS</string>
+    <string name="strTags">TAGS</string>
+    <string name="strIngredient">INGREDIENT</string>
+    <string name="strMeasure">MEASURE</string>
+</resources>
