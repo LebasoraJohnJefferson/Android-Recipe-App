@@ -36,7 +36,6 @@ public class RecipeActivity extends AppCompatActivity {
         TextView mealView = findViewById( R.id.strMeal );
         TextView categoryView = findViewById( R.id.strCategory );
         TextView areaView = findViewById( R.id.strArea );
-        TextView tagsView = findViewById( R.id.strTags );
         ImageView youtubeView = findViewById( R.id.strYoutube );
         TextView ingredient1 = findViewById( R.id.strIngredient1 );
         TextView measure1 = findViewById( R.id.strMeasure1 );
@@ -62,7 +61,6 @@ public class RecipeActivity extends AppCompatActivity {
                 mealView.setText(meals.get(0).getStrMeal());
                 categoryView.setText( "Category: "+meals.get(0).getStrCategory() );
                 areaView.setText( "Area: "+meals.get( 0 ).getStrArea() );
-                tagsView.setText( "Tags: "+meals.get( 0 ).getStrTags() );
                 youtubeView.setOnClickListener( view -> {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(meals.get( 0 ).getStrYoutube()));
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
